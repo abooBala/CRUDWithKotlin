@@ -24,9 +24,9 @@ abstract class SubscriberDatabase : RoomDatabase() {
                 if (instance == null){
                     instance = Room.databaseBuilder(
                         context.applicationContext,
-                    SubscriberDatabase::class.java,
+                        SubscriberDatabase::class.java,
                         "subscriber_data_database"
-                    ).build()
+                        ).build()
                 }
                 return instance
             }
